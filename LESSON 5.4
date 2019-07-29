@@ -1,0 +1,46 @@
+<!doctype html>
+<title>Quiz Title | Wiki Jr</title>
+<link rel="stylesheet" href="/css/wiki.css">
+<h1>Quiz Title</h1>
+
+
+<p>why human life so diffult?
+<select id="q1">
+<option>love  
+<option>Hatred
+<option option value="correct">no reason
+  
+</select>
+<p>what you are looking for
+<select id="q2">
+<option>beacause you handsome
+<option>beacause you suck  
+<option option value="correct">beacause you useless  
+</select>
+<p>who can distroy  world
+<select id="q3">
+<option option value="correct">human
+<option>disease
+<option>coincidence      
+</select>
+<button id="checkButton" >check answers</button>
+
+<script>
+  
+checkButton.onclick = function() {
+  var score=0
+  if (q1.value == 'correct') {
+  score ++;
+}
+if (q2.value == 'correct') {
+  score ++;
+}
+if (q3.value == 'correct') {
+  score ++;
+}
+ alert(score );
+}
+</script>
+<script src='quiz.js'>
+  
+</script>
